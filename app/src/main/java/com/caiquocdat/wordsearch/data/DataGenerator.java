@@ -8,9 +8,10 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 public class DataGenerator {
-    private static List<QuestionModel> questions = generateQuestions();
+    private static List<QuestionModel> questions =getEasyQuestions();
     private static Random random = new Random();
     public static List<QuestionModel> generateQuestions() {
         List<QuestionModel> questions = new ArrayList<>();
@@ -103,12 +104,35 @@ public class DataGenerator {
         List<String> listWordAnswer_6 = Arrays.asList("H", "A", "Y");
         QuestionModel question6 = new QuestionModel(6, "Ăn vóc học ___",listWordAnswer_6,"easy", wordsForQuestion6);
         questions.add(question6);
+        List<WordModel> wordsForQuestion7 = Arrays.asList(
+                new WordModel(61, "O", 7),
+                new WordModel(62, "R", 7),
+                new WordModel(63, "I", 7),
+                new WordModel(64, "H", 7),
+                new WordModel(65, "T", 7),
+                new WordModel(66, "N", 7),
+                new WordModel(67, "A", 7),
+                new WordModel(68, "E", 7),
+                new WordModel(69, "D", 7),
+                new WordModel(70, "Y", 7));
+        List<String> listWordAnswer_7 = Arrays.asList("H", "A", "Y");
+        QuestionModel question7 = new QuestionModel(7, "Ác nhân tự ___ ác nhân ma",listWordAnswer_7,"hard", wordsForQuestion7);
+        questions.add(question7);
 
 
 
         // Add as many questions as you need
 
         return questions;
+    }
+    public static List<QuestionModel> getEasyQuestions() {
+        List<QuestionModel> allQuestions = generateQuestions();
+
+        List<QuestionModel> easyQuestions = allQuestions.stream()
+                .filter(question -> "easy".equals(question.getTypeQuestion()))
+                .collect(Collectors.toList());
+
+        return easyQuestions;
     }
     public static QuestionModel getRandomNewQuestion() {
         int randomIndex = random.nextInt(questions.size());
@@ -135,5 +159,8 @@ public class DataGenerator {
         questions.remove(randomIndex);
 
         return randomQuestion;
+    }
+    public static void resetQuestions() {
+        questions = generateQuestions();
     }
 }

@@ -58,11 +58,18 @@ public class WordAdapter extends RecyclerView.Adapter<WordAdapter.WordViewHolder
                 for (int i=0;i<questionModel.getAnswer().size();i++){
                     Log.d("Test_1", "value_correct: "+questionModel.getAnswer().get(i));
                 }
-                if (listChoise.equals(questionModel.getAnswer())){
-                    if (onClickAnswer!=null){
-                        onClickAnswer.onClick("true");
-                    }
+                if (listChoise.size()>questionModel.getAnswer().size()){
+                    listChoise.clear();
+                    listChoise.add(current.getWordText());
                 }
+                if (onClickAnswer!=null){
+                    onClickAnswer.onClick(listChoise);
+                }
+//                if (listChoise.equals(questionModel.getAnswer())){
+//                    if (onClickAnswer!=null){
+//                        onClickAnswer.onClick("true");
+//                    }
+//                }
             }
         });
     }

@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
+import com.caiquocdat.wordsearch.data.DataGenerator;
 import com.caiquocdat.wordsearch.databinding.ActivityHomeBinding;
 import com.caiquocdat.wordsearch.databinding.ActivityMainBinding;
 
@@ -42,6 +44,14 @@ public class HomeActivity extends AppCompatActivity {
         super.onResume();
         hideSystemUI();
     }
+
+    @Override
+    protected void onStart() {
+        DataGenerator.resetQuestions();
+        Toast.makeText(this, ""+DataGenerator.getEasyQuestions().size(), Toast.LENGTH_SHORT).show();
+        super.onStart();
+    }
+
     @Override
     public void onBackPressed() {
         // Không làm gì cả để ngăn người dùng nhấn nút back
