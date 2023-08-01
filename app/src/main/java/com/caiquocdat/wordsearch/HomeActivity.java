@@ -48,7 +48,6 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         DataGenerator.resetQuestions();
-        Toast.makeText(this, ""+DataGenerator.getEasyQuestions().size(), Toast.LENGTH_SHORT).show();
         super.onStart();
     }
 

@@ -1,6 +1,7 @@
 package com.caiquocdat.wordsearch.adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -40,12 +41,14 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Log.d("Test_3", "size: " + selectList);
+        holder.itemAnswerBinding.wordTv.setBackgroundColor(Color.parseColor("#025EE8"));
         if (selectList != null) {
             int size = selectList.size();
             for (int i = 0; i < size; i++) {
                 String answer = selectList.get(i);
                 if (position == i) {
                     holder.itemAnswerBinding.wordTv.setText(answer);
+                    holder.itemAnswerBinding.wordTv.setBackgroundColor(Color.parseColor("#FF88FA"));
                 }
             }
             if (selectList.size()==answerList.size()){
@@ -58,6 +61,7 @@ public class AnswerAdapter extends RecyclerView.Adapter<AnswerAdapter.ViewHolder
                     public void onFinish() {
                         // Các hành động cần thực hiện khi hết thời gian đếm ngược
                         holder.itemAnswerBinding.wordTv.setText("");
+                        holder.itemAnswerBinding.wordTv.setBackgroundColor(Color.parseColor("#025EE8"));
                     }
                 }.start();
             }
