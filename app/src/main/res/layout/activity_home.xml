@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_brg"/>
+    <ImageView
+        android:layout_marginTop="100dp"
+        android:id="@+id/img_1"
+        android:layout_width="596px"
+        android:layout_height="262px"
+        android:src="@drawable/img_logo"
+        android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/img_easy"
+            android:layout_width="260dp"
+            android:layout_height="150px"
+            android:src="@drawable/img_easy"
+            />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/img_easy"
+            android:scaleType="fitXY"
+            android:id="@+id/img_hard"
+            android:layout_width="260dp"
+            android:layout_height="150px"
+            android:src="@drawable/img_hard"
+            />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/img_hard"
+            android:scaleType="fitXY"
+            android:id="@+id/img_extremelyHard"
+            android:layout_width="260dp"
+            android:layout_height="150px"
+            android:src="@drawable/img_extremelyhard"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
