@@ -25,6 +25,23 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(HomeActivity.this,QuizActivity.class);
+                intent.putExtra("type","easy");
+                startActivity(intent);
+            }
+        });
+        homeBinding.imgHard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,QuizActivity.class);
+                intent.putExtra("type","hard");
+                startActivity(intent);
+            }
+        });
+        homeBinding.imgExtremelyHard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this,QuizActivity.class);
+                intent.putExtra("type","veryhard");
                 startActivity(intent);
             }
         });
@@ -47,7 +64,9 @@ public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onStart() {
-        DataGenerator.resetQuestions();
+        DataGenerator.resetEasyQuestions();
+        DataGenerator.resetHardQuestions();
+        DataGenerator.resetVeryHardQuestions();
         super.onStart();
     }
 

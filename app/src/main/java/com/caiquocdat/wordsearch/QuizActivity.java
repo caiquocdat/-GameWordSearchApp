@@ -42,6 +42,7 @@ public class QuizActivity extends AppCompatActivity {
     List<String> selectList;
     AnswerAdapter answerAdapter;
     LinearLayoutManager layoutManager;
+    String type;
 
 
     @Override
@@ -50,6 +51,9 @@ public class QuizActivity extends AppCompatActivity {
         quizBinding = ActivityQuizBinding.inflate(getLayoutInflater());
         View view = quizBinding.getRoot();
         setContentView(view);
+        Intent intent = getIntent();
+        type = intent.getStringExtra("type");
+
 
         hideSystemUI();
         setUpCountTime();
@@ -59,9 +63,15 @@ public class QuizActivity extends AppCompatActivity {
         quizBinding.againImg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DataGenerator.resetQuestions();
+                if (type.equals("easy")) {
+                    DataGenerator.resetEasyQuestions();
+                }else  if (type.equals("hard")) {
+                    DataGenerator.resetHardQuestions();
+                } else  if (type.equals("veryhard")) {
+                    DataGenerator.resetVeryHardQuestions();
+                }
                 quizBinding.pointTv.setText("0");
-                point=0;
+                point = 0;
                 setUp();
                 setUpCountTime();
                 setUpQuestion();
@@ -86,7 +96,7 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
                 pointStr = quizBinding.pointTv.getText().toString();
                 point = Integer.parseInt(pointStr);
-                if (point > 50) {
+                if (point > 90) {
                     Toast.makeText(QuizActivity.this, "Bạn đã trả lời hết câu hỏi !", Toast.LENGTH_SHORT).show();
                 } else {
                     setUpCountTime();
@@ -100,7 +110,14 @@ public class QuizActivity extends AppCompatActivity {
 
 
     private void setUpQuestion() {
-        questions = DataGenerator.getRandomQuestion();
+        if (type.equals("easy")) {
+            questions = DataGenerator.getRandomEasyQuestion();
+        } else if (type.equals("hard")) {
+            questions = DataGenerator.getRandomHardQuestion();
+        } else if (type.equals("veryhard")) {
+            questions = DataGenerator.getRandomVeryHardQuestion();
+        }
+
         //setup question
         quizBinding.questionTv.setText(questions.getQuestionText());
         //setup rcv
@@ -157,6 +174,13 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     private void setUpCountTime() {
+        if (type.equals("easy")){
+            totalTime=15;
+        }else if (type.equals("hard")){
+            totalTime=10;
+        } else if (type.equals("veryhard")){
+            totalTime=5;
+        }
         countDownTimer = new CountDownTimer((long) (totalTime * 1000), 100) {
             @Override
             public void onTick(long millisUntilFinished) {
