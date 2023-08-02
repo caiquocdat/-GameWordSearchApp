@@ -176,7 +176,7 @@ public class DataGenerator {
                 new WordModel(109, "D", 11),
                 new WordModel(110, "Y", 11));
         List<String> listWordAnswer_11 = Arrays.asList("D", "E");
-        QuestionModel question11 = new QuestionModel(11, "Dễ người ___ ta",listWordAnswer_11,"hard", wordsForQuestion11);
+        QuestionModel question11 = new QuestionModel(11, "Dễ người ___ ta",listWordAnswer_11,"easy", wordsForQuestion11);
         questions.add(question11);
         List<WordModel> wordsForQuestion12 = Arrays.asList(
                 new WordModel(111, "D", 12),
@@ -191,7 +191,7 @@ public class DataGenerator {
                 new WordModel(120, "U", 12)
         );
         List<String> listWordAnswer_12 = Arrays.asList("D", "A", "T");
-        QuestionModel question12 = new QuestionModel(12, "Dục tốc bất ___",listWordAnswer_12,"hard", wordsForQuestion12);
+        QuestionModel question12 = new QuestionModel(12, "Dục tốc bất ___",listWordAnswer_12,"easy", wordsForQuestion12);
         questions.add(question12);
 
         List<WordModel> wordsForQuestion13 = Arrays.asList(
@@ -207,7 +207,7 @@ public class DataGenerator {
                 new WordModel(130, "U", 13)
         );
         List<String> listWordAnswer_13 = Arrays.asList("K", "H", "O","N","G");
-        QuestionModel question13 = new QuestionModel(13, "Được ăn cả, ngã về ___",listWordAnswer_13,"hard", wordsForQuestion13);
+        QuestionModel question13 = new QuestionModel(13, "Được ăn cả, ngã về ___",listWordAnswer_13,"easy", wordsForQuestion13);
         questions.add(question13);
         List<WordModel> wordsForQuestion14 = Arrays.asList(
                 new WordModel(131, "D", 14),
@@ -222,7 +222,7 @@ public class DataGenerator {
                 new WordModel(140, "U", 14)
         );
         List<String> listWordAnswer_14 = Arrays.asList("G", "A", "O");
-        QuestionModel question14 = new QuestionModel(14, "Anh em ___, đạo ngãi tiền",listWordAnswer_14,"hard", wordsForQuestion14);
+        QuestionModel question14 = new QuestionModel(14, "Anh em ___, đạo ngãi tiền",listWordAnswer_14,"easy", wordsForQuestion14);
         questions.add(question14);
 
         List<WordModel> wordsForQuestion15 = Arrays.asList(
@@ -238,7 +238,7 @@ public class DataGenerator {
                 new WordModel(150, "Y", 15)
         );
         List<String> listWordAnswer_15 = Arrays.asList("M", "A", "U");
-        QuestionModel question15 = new QuestionModel(15, "Anh em hạt ___ sẻ đôi",listWordAnswer_15,"hard", wordsForQuestion15);
+        QuestionModel question15 = new QuestionModel(15, "Anh em hạt ___ sẻ đôi",listWordAnswer_15,"easy", wordsForQuestion15);
         questions.add(question15);
 
         List<WordModel> wordsForQuestion16 = Arrays.asList(
@@ -254,7 +254,7 @@ public class DataGenerator {
                 new WordModel(160, "Y", 16)
         );
         List<String> listWordAnswer_16 = Arrays.asList("N", "H", "U");
-        QuestionModel question16 = new QuestionModel(16, "Anh em ___ chân tay",listWordAnswer_16,"hard", wordsForQuestion16);
+        QuestionModel question16 = new QuestionModel(16, "Anh em ___ chân tay",listWordAnswer_16,"easy", wordsForQuestion16);
         questions.add(question16);
 
         List<WordModel> wordsForQuestion17 = Arrays.asList(
@@ -270,7 +270,7 @@ public class DataGenerator {
                 new WordModel(170, "Y", 17)
         );
         List<String> listWordAnswer_17 = Arrays.asList("H", "O", "N");
-        QuestionModel question17 = new QuestionModel(17, "Ẵm con chồng ___ bồng cháu ngoại",listWordAnswer_17,"hard", wordsForQuestion17);
+        QuestionModel question17 = new QuestionModel(17, "Ẵm con chồng ___ bồng cháu ngoại",listWordAnswer_17,"easy", wordsForQuestion17);
         questions.add(question17);
 
         List<WordModel> wordsForQuestion18 = Arrays.asList(
@@ -286,7 +286,7 @@ public class DataGenerator {
                 new WordModel(180, "Y", 18)
         );
         List<String> listWordAnswer_18 = Arrays.asList("N", "H", "O");
-        QuestionModel question18 = new QuestionModel(18, "Ăn bát cơm dẻo, ___ nẻo đường đi",listWordAnswer_18,"hard", wordsForQuestion18);
+        QuestionModel question18 = new QuestionModel(18, "Ăn bát cơm dẻo, ___ nẻo đường đi",listWordAnswer_18,"easy", wordsForQuestion18);
         questions.add(question18);
 
         List<WordModel> wordsForQuestion19 = Arrays.asList(
@@ -302,7 +302,7 @@ public class DataGenerator {
                 new WordModel(190, "D", 19)
         );
         List<String> listWordAnswer_19 = Arrays.asList("H", "O", "P");
-        QuestionModel question19 = new QuestionModel(19, "Ăn bụi tre, dè bụi ___",listWordAnswer_19,"hard", wordsForQuestion19);
+        QuestionModel question19 = new QuestionModel(19, "Ăn bụi tre, dè bụi ___",listWordAnswer_19,"easy", wordsForQuestion19);
         questions.add(question19);
 
         List<WordModel> wordsForQuestion20 = Arrays.asList(
@@ -478,6 +478,483 @@ public class DataGenerator {
         List<String> listWordAnswer_30 = Arrays.asList("T","R","E", "O");
         QuestionModel question30 = new QuestionModel(30, "Buộc cổ mèo, ___ cổ chó", listWordAnswer_30,"veryhard", wordsForQuestion30);
         questions.add(question30);
+        List<WordModel> wordsForQuestion31 = Arrays.asList(
+                new WordModel(301, "A", 31),
+                new WordModel(302, "B", 31),
+                new WordModel(303, "G", 31),
+                new WordModel(304, "D", 31),
+                new WordModel(305, "I", 31),
+                new WordModel(306, "H", 31),
+                new WordModel(307, "C", 31),
+                new WordModel(308, "N", 31),
+                new WordModel(309, "R", 31),
+                new WordModel(310, "E", 31)
+        );
+        List<String> listWordAnswer_31 = Arrays.asList("G", "A");
+        QuestionModel question31 = new QuestionModel(31, "Bút sa, ___ chết", listWordAnswer_31,"veryhard", wordsForQuestion31);
+        questions.add(question31);
+
+        List<WordModel> wordsForQuestion32 = Arrays.asList(
+                new WordModel(311, "A", 32),
+                new WordModel(312, "B", 32),
+                new WordModel(313, "G", 32),
+                new WordModel(314, "D", 32),
+                new WordModel(315, "V", 32),
+                new WordModel(316, "H", 32),
+                new WordModel(317, "O", 32),
+                new WordModel(318, "N", 32),
+                new WordModel(319, "R", 32),
+                new WordModel(320, "E", 32)
+        );
+        List<String> listWordAnswer_32 = Arrays.asList("V", "O","N");
+        QuestionModel question32 = new QuestionModel(32, "Cả ___ lớn lãi", listWordAnswer_32,"veryhard", wordsForQuestion32);
+        questions.add(question32);
+
+        List<WordModel> wordsForQuestion33 = Arrays.asList(
+                new WordModel(321, "A", 33),
+                new WordModel(322, "B", 33),
+                new WordModel(323, "G", 33),
+                new WordModel(324, "D", 33),
+                new WordModel(325, "I", 33),
+                new WordModel(326, "H", 33),
+                new WordModel(327, "O", 33),
+                new WordModel(328, "N", 33),
+                new WordModel(329, "R", 33),
+                new WordModel(330, "E", 33)
+        );
+        List<String> listWordAnswer_33 = Arrays.asList("B", "O");
+        QuestionModel question33 = new QuestionModel(33, "Cái khó ___ cái khôn", listWordAnswer_33,"veryhard", wordsForQuestion33);
+        questions.add(question33);
+
+        List<WordModel> wordsForQuestion34 = Arrays.asList(
+                new WordModel(331, "A", 34),
+                new WordModel(332, "B", 34),
+                new WordModel(333, "G", 34),
+                new WordModel(334, "D", 34),
+                new WordModel(335, "I", 34),
+                new WordModel(336, "H", 34),
+                new WordModel(337, "O", 34),
+                new WordModel(338, "N", 34),
+                new WordModel(339, "T", 34),
+                new WordModel(340, "E", 34)
+        );
+        List<String> listWordAnswer_34 = Arrays.asList("N", "E","T");
+        QuestionModel question34 = new QuestionModel(34, "Cái ___ đánh chết cái đẹp", listWordAnswer_34,"veryhard", wordsForQuestion34);
+        questions.add(question34);
+
+        List<WordModel> wordsForQuestion35 = Arrays.asList(
+                new WordModel(341, "A", 35),
+                new WordModel(342, "B", 35),
+                new WordModel(343, "G", 35),
+                new WordModel(344, "D", 35),
+                new WordModel(345, "I", 35),
+                new WordModel(346, "H", 35),
+                new WordModel(347, "O", 35),
+                new WordModel(348, "N", 35),
+                new WordModel(349, "U", 35),
+                new WordModel(350, "E", 35)
+        );
+        List<String> listWordAnswer_35 = Arrays.asList("B", "A", "U");
+        QuestionModel question35 = new QuestionModel(35, "Cắt dây ___ dây bí, ai nỡ cắt dây chị dây em", listWordAnswer_35,"veryhard", wordsForQuestion35);
+        questions.add(question35);
+
+        List<WordModel> wordsForQuestion36 = Arrays.asList(
+                new WordModel(351, "A", 36),
+                new WordModel(352, "B", 36),
+                new WordModel(353, "G", 36),
+                new WordModel(354, "D", 36),
+                new WordModel(355, "I", 36),
+                new WordModel(356, "H", 36),
+                new WordModel(357, "O", 36),
+                new WordModel(358, "T", 36),
+                new WordModel(359, "R", 36),
+                new WordModel(360, "E", 36)
+        );
+        List<String> listWordAnswer_36 = Arrays.asList("T", "A", "I");
+        QuestionModel question36 = new QuestionModel(36, "Cần ___, cải nhừ", listWordAnswer_36,"veryhard", wordsForQuestion36);
+        questions.add(question36);
+
+        List<WordModel> wordsForQuestion37 = Arrays.asList(
+                new WordModel(361, "A", 37),
+                new WordModel(362, "B", 37),
+                new WordModel(363, "G", 37),
+                new WordModel(364, "D", 37),
+                new WordModel(365, "I", 37),
+                new WordModel(366, "H", 37),
+                new WordModel(367, "O", 37),
+                new WordModel(368, "N", 37),
+                new WordModel(369, "R", 37),
+                new WordModel(370, "E", 37)
+        );
+        List<String> listWordAnswer_37 = Arrays.asList("D", "A", "N","G");
+        QuestionModel question37 = new QuestionModel(37, "Đi một ngày ___ , học một sàng khôn", listWordAnswer_37,"veryhard", wordsForQuestion37);
+        questions.add(question37);
+
+        List<WordModel> wordsForQuestion38 = Arrays.asList(
+                new WordModel(371, "A", 38),
+                new WordModel(372, "B", 38),
+                new WordModel(373, "G", 38),
+                new WordModel(374, "D", 38),
+                new WordModel(375, "I", 38),
+                new WordModel(376, "H", 38),
+                new WordModel(377, "O", 38),
+                new WordModel(378, "N", 38),
+                new WordModel(379, "R", 38),
+                new WordModel(380, "E", 38)
+        );
+        List<String> listWordAnswer_38 = Arrays.asList("L", "A");
+        QuestionModel question38 = new QuestionModel(38, "Cây chạm ___, cá chạm vây", listWordAnswer_38,"veryhard", wordsForQuestion38);
+        questions.add(question38);
+
+        List<WordModel> wordsForQuestion39 = Arrays.asList(
+                new WordModel(381, "A", 39),
+                new WordModel(382, "B", 39),
+                new WordModel(383, "G", 39),
+                new WordModel(384, "D", 39),
+                new WordModel(385, "I", 39),
+                new WordModel(386, "U", 39),
+                new WordModel(387, "O", 39),
+                new WordModel(388, "N", 39),
+                new WordModel(389, "R", 39),
+                new WordModel(390, "E", 39)
+        );
+        List<String> listWordAnswer_39 = Arrays.asList("D", "U", "N","G");
+        QuestionModel question39 = new QuestionModel(39, "Cây ngay chẳng sợ chết ___", listWordAnswer_39,"veryhard", wordsForQuestion39);
+        questions.add(question39);
+
+        List<WordModel> wordsForQuestion40 = Arrays.asList(
+                new WordModel(391, "A", 40),
+                new WordModel(392, "B", 40),
+                new WordModel(393, "G", 40),
+                new WordModel(394, "D", 40),
+                new WordModel(395, "I", 40),
+                new WordModel(396, "H", 40),
+                new WordModel(397, "O", 40),
+                new WordModel(398, "N", 40),
+                new WordModel(399, "M", 40),
+                new WordModel(400, "E", 40)
+        );
+        List<String> listWordAnswer_40 = Arrays.asList("M","A", "N","G");
+        QuestionModel question40 = new QuestionModel(40, "Cha cầm khoáng, con bẻ ___", listWordAnswer_40,"veryhard", wordsForQuestion40);
+        questions.add(question40);
+
+        List<WordModel> wordsForQuestion41 = Arrays.asList(
+                new WordModel(401, "A", 41),
+                new WordModel(402, "B", 41),
+                new WordModel(403, "G", 41),
+                new WordModel(404, "D", 41),
+                new WordModel(405, "C", 41),
+                new WordModel(406, "H", 41),
+                new WordModel(407, "U", 41),
+                new WordModel(408, "N", 41),
+                new WordModel(409, "M", 41),
+                new WordModel(410, "E", 41)
+        );
+        List<String> listWordAnswer_41 = Arrays.asList("C","H","U","N","G");
+        QuestionModel question41 = new QuestionModel(41, "Cha ___ không ai khóc", listWordAnswer_41,"hard", wordsForQuestion41);
+        questions.add(question41);
+        List<WordModel> wordsForQuestion42 = Arrays.asList(
+                new WordModel(411, "B", 42),
+                new WordModel(412, "A", 42),
+                new WordModel(413, "C", 42),
+                new WordModel(414, "O", 42),
+                new WordModel(415, "H", 42),
+                new WordModel(416, "E", 42),
+                new WordModel(417, "M", 42),
+                new WordModel(418, "U", 42),
+                new WordModel(419, "K", 42),
+                new WordModel(420, "N", 42)
+        );
+        List<String> listWordAnswer_42 = Arrays.asList("C","O","N");
+        QuestionModel question42 = new QuestionModel(42, "Cha già ___ cọc", listWordAnswer_42, "hard", wordsForQuestion42);
+        questions.add(question42);
+
+        List<WordModel> wordsForQuestion43 = Arrays.asList(
+                new WordModel(421, "D", 43),
+                new WordModel(422, "A", 43),
+                new WordModel(423, "E", 43),
+                new WordModel(424, "T", 43),
+                new WordModel(425, "M", 43),
+                new WordModel(426, "S", 43),
+                new WordModel(427, "N", 43),
+                new WordModel(428, "I", 43),
+                new WordModel(429, "H", 43),
+                new WordModel(430, "C", 43)
+        );
+        List<String> listWordAnswer_43 = Arrays.asList("S","I","N","H");
+        QuestionModel question43 = new QuestionModel(43, "Cha ___ chẳng bằng mẹ dưỡng", listWordAnswer_43, "hard", wordsForQuestion43);
+        questions.add(question43);
+        List<WordModel> wordsForQuestion44 = Arrays.asList(
+                new WordModel(431, "A", 44),
+                new WordModel(432, "B", 44),
+                new WordModel(433, "L", 44),
+                new WordModel(434, "T", 44),
+                new WordModel(435, "H", 44),
+                new WordModel(436, "O", 44),
+                new WordModel(437, "I", 44),
+                new WordModel(438, "E", 44),
+                new WordModel(439, "R", 44),
+                new WordModel(440, "K", 44)
+        );
+        List<String> listWordAnswer_44 = Arrays.asList("T","O","I");
+        QuestionModel question44 = new QuestionModel(44, "Cháu bà nội, ___ bà ngoại", listWordAnswer_44, "hard", wordsForQuestion44);
+        questions.add(question44);
+
+        List<WordModel> wordsForQuestion45 = Arrays.asList(
+                new WordModel(441, "G", 45),
+                new WordModel(442, "A", 45),
+                new WordModel(443, "D", 45),
+                new WordModel(444, "I", 45),
+                new WordModel(445, "T", 45),
+                new WordModel(446, "M", 45),
+                new WordModel(447, "L", 45),
+                new WordModel(448, "N", 45),
+                new WordModel(449, "E", 45),
+                new WordModel(450, "Y", 45)
+        );
+        List<String> listWordAnswer_45 = Arrays.asList("L","A","Y");
+        QuestionModel question45 = new QuestionModel(45, "Cháy thành vạ ___", listWordAnswer_45, "hard", wordsForQuestion45);
+        questions.add(question45);
+
+        List<WordModel> wordsForQuestion46 = Arrays.asList(
+                new WordModel(451, "N", 46),
+                new WordModel(452, "A", 46),
+                new WordModel(453, "C", 46),
+                new WordModel(454, "M", 46),
+                new WordModel(455, "O", 46),
+                new WordModel(456, "I", 46),
+                new WordModel(457, "B", 46),
+                new WordModel(458, "H", 46),
+                new WordModel(459, "Y", 46),
+                new WordModel(460, "R", 46)
+        );
+        List<String> listWordAnswer_46 = Arrays.asList("C","H","A","Y");
+        QuestionModel question46 = new QuestionModel(46, "___ trời không khỏi nắng", listWordAnswer_46, "hard", wordsForQuestion46);
+        questions.add(question46);
+
+        List<WordModel> wordsForQuestion47 = Arrays.asList(
+                new WordModel(461, "A", 47),
+                new WordModel(462, "B", 47),
+                new WordModel(463, "T", 47),
+                new WordModel(464, "N", 47),
+                new WordModel(465, "H", 47),
+                new WordModel(466, "O", 47),
+                new WordModel(467, "M", 47),
+                new WordModel(468, "E", 47),
+                new WordModel(469, "R", 47),
+                new WordModel(470, "L", 47)
+        );
+        List<String> listWordAnswer_47 = Arrays.asList("B","E","N");
+        QuestionModel question47 = new QuestionModel(47, "Chắc rễ ___ cây", listWordAnswer_47, "hard", wordsForQuestion47);
+        questions.add(question47);
+
+        List<WordModel> wordsForQuestion48 = Arrays.asList(
+                new WordModel(471, "A", 48),
+                new WordModel(472, "B", 48),
+                new WordModel(473, "C", 48),
+                new WordModel(474, "D", 48),
+                new WordModel(475, "E", 48),
+                new WordModel(476, "F", 48),
+                new WordModel(477, "G", 48),
+                new WordModel(478, "H", 48),
+                new WordModel(479, "I", 48),
+                new WordModel(480, "K", 48)
+        );
+        List<String> listWordAnswer_48 = Arrays.asList("C","H","E","P");
+        QuestionModel question48 = new QuestionModel(48, "Chẳng được con trắm, con ___ cũng được mớ tép, mớ tôm", listWordAnswer_48, "hard", wordsForQuestion48);
+        questions.add(question48);
+
+        List<WordModel> wordsForQuestion49 = Arrays.asList(
+                new WordModel(481, "A", 49),
+                new WordModel(482, "B", 49),
+                new WordModel(483, "C", 49),
+                new WordModel(484, "D", 49),
+                new WordModel(485, "E", 49),
+                new WordModel(486, "F", 49),
+                new WordModel(487, "M", 49),
+                new WordModel(488, "H", 49),
+                new WordModel(489, "I", 49),
+                new WordModel(490, "L", 49)
+        );
+        List<String> listWordAnswer_49 = Arrays.asList("L","A","M");
+        QuestionModel question49 = new QuestionModel(49, "Chẳng ốm chẳng đau, ___ giàu mấy chốc", listWordAnswer_49, "hard", wordsForQuestion49);
+        questions.add(question49);
+
+        List<WordModel> wordsForQuestion50 = Arrays.asList(
+                new WordModel(491, "A", 50),
+                new WordModel(492, "B", 50),
+                new WordModel(493, "C", 50),
+                new WordModel(494, "D", 50),
+                new WordModel(495, "E", 50),
+                new WordModel(496, "F", 50),
+                new WordModel(497, "M", 50),
+                new WordModel(498, "U", 50),
+                new WordModel(499, "I", 50),
+                new WordModel(500, "K", 50)
+        );
+        List<String> listWordAnswer_50 = Arrays.asList("M","A","U");
+        QuestionModel question50 = new QuestionModel(50, "Chê chồng trước đánh đau, gặp chồng sau ___ đánh", listWordAnswer_50, "hard", wordsForQuestion50);
+        questions.add(question50);
+        List<WordModel> wordsForQuestion51 = Arrays.asList(
+                new WordModel(501, "A", 51),
+                new WordModel(502, "B", 51),
+                new WordModel(503, "U", 51),
+                new WordModel(504, "N", 51),
+                new WordModel(505, "H", 51),
+                new WordModel(506, "O", 51),
+                new WordModel(507, "I", 51),
+                new WordModel(508, "E", 51),
+                new WordModel(509, "R", 51),
+                new WordModel(510, "K", 51)
+        );
+        List<String> listWordAnswer_51 = Arrays.asList("H","E","O");
+        QuestionModel question51 = new QuestionModel(51, "Dao thử trầu ___, kéo thử lụa sô", listWordAnswer_51, "hard", wordsForQuestion51);
+        questions.add(question51);
+
+        List<WordModel> wordsForQuestion52 = Arrays.asList(
+                new WordModel(511, "G", 52),
+                new WordModel(512, "C", 52),
+                new WordModel(513, "D", 52),
+                new WordModel(514, "I", 52),
+                new WordModel(515, "T", 52),
+                new WordModel(516, "M", 52),
+                new WordModel(517, "O", 52),
+                new WordModel(518, "N", 52),
+                new WordModel(519, "E", 52),
+                new WordModel(520, "R", 52)
+        );
+        List<String> listWordAnswer_52 = Arrays.asList("C","O","N");
+        QuestionModel question52 = new QuestionModel(52, "Dâu dâu rể rể cũng kể là ___", listWordAnswer_52, "hard", wordsForQuestion52);
+        questions.add(question52);
+
+        List<WordModel> wordsForQuestion53 = Arrays.asList(
+                new WordModel(521, "N", 53),
+                new WordModel(522, "A", 53),
+                new WordModel(523, "D", 53),
+                new WordModel(524, "M", 53),
+                new WordModel(525, "O", 53),
+                new WordModel(526, "U", 53),
+                new WordModel(527, "B", 53),
+                new WordModel(528, "H", 53),
+                new WordModel(529, "E", 53),
+                new WordModel(530, "R", 53)
+        );
+        List<String> listWordAnswer_53 = Arrays.asList("D","A","U");
+        QuestionModel question53 = new QuestionModel(53, "___ dữ mất họ, chó dữ mất láng giềng", listWordAnswer_53, "hard", wordsForQuestion53);
+        questions.add(question53);
+
+        List<WordModel> wordsForQuestion54 = Arrays.asList(
+                new WordModel(531, "A", 54),
+                new WordModel(532, "B", 54),
+                new WordModel(533, "C", 54),
+                new WordModel(534, "N", 54),
+                new WordModel(535, "H", 54),
+                new WordModel(536, "O", 54),
+                new WordModel(537, "M", 54),
+                new WordModel(538, "E", 54),
+                new WordModel(539, "R", 54),
+                new WordModel(540, "L", 54)
+        );
+        List<String> listWordAnswer_54 = Arrays.asList("C","O","N");
+        QuestionModel question54 = new QuestionModel(54, "Dốt đặc ___ hơn hay chữ lỏng", listWordAnswer_54, "hard", wordsForQuestion54);
+        questions.add(question54);
+
+        List<WordModel> wordsForQuestion55 = Arrays.asList(
+                new WordModel(541, "A", 55),
+                new WordModel(542, "B", 55),
+                new WordModel(543, "C", 55),
+                new WordModel(544, "D", 55),
+                new WordModel(545, "E", 55),
+                new WordModel(546, "T", 55),
+                new WordModel(547, "G", 55),
+                new WordModel(548, "H", 55),
+                new WordModel(549, "I", 55),
+                new WordModel(550, "K", 55)
+        );
+        List<String> listWordAnswer_55 = Arrays.asList("B","I","E","T");
+        QuestionModel question55 = new QuestionModel(55, "Đàn bà không ___ nuôi heo - đàn bà nhác", listWordAnswer_55, "hard", wordsForQuestion55);
+        questions.add(question55);
+
+        List<WordModel> wordsForQuestion56 = Arrays.asList(
+                new WordModel(551, "A", 56),
+                new WordModel(552, "B", 56),
+                new WordModel(553, "C", 56),
+                new WordModel(554, "D", 56),
+                new WordModel(555, "E", 56),
+                new WordModel(556, "F", 56),
+                new WordModel(557, "G", 56),
+                new WordModel(558, "H", 56),
+                new WordModel(559, "R", 56),
+                new WordModel(560, "K", 56)
+        );
+        List<String> listWordAnswer_56 = Arrays.asList("R","E");
+        QuestionModel question56 = new QuestionModel(56, "Kén dâu thì dễ, kén ___ thì khó", listWordAnswer_56, "hard", wordsForQuestion56);
+        questions.add(question56);
+
+        List<WordModel> wordsForQuestion57 = Arrays.asList(
+                new WordModel(561, "A", 57),
+                new WordModel(562, "B", 57),
+                new WordModel(563, "C", 57),
+                new WordModel(564, "D", 57),
+                new WordModel(565, "E", 57),
+                new WordModel(566, "F", 57),
+                new WordModel(567, "G", 57),
+                new WordModel(568, "H", 57),
+                new WordModel(569, "I", 57),
+                new WordModel(570, "O", 57)
+        );
+        List<String> listWordAnswer_57 = Arrays.asList("C","O");
+        QuestionModel question57 = new QuestionModel(57, "Khéo ăn thì no, khéo ___ thì ấm", listWordAnswer_57, "hard", wordsForQuestion57);
+        questions.add(question57);
+
+        List<WordModel> wordsForQuestion58 = Arrays.asList(
+                new WordModel(571, "A", 58),
+                new WordModel(572, "B", 58),
+                new WordModel(573, "C", 58),
+                new WordModel(574, "D", 58),
+                new WordModel(575, "E", 58),
+                new WordModel(576, "F", 58),
+                new WordModel(577, "G", 58),
+                new WordModel(578, "N", 58),
+                new WordModel(579, "I", 58),
+                new WordModel(580, "K", 58)
+        );
+        List<String> listWordAnswer_58 = Arrays.asList("N","E","N");
+        QuestionModel question58 = new QuestionModel(58, "Khi ___, trời cũng chiều người", listWordAnswer_58, "hard", wordsForQuestion58);
+        questions.add(question58);
+
+        List<WordModel> wordsForQuestion59 = Arrays.asList(
+                new WordModel(581, "A", 59),
+                new WordModel(582, "B", 59),
+                new WordModel(583, "C", 59),
+                new WordModel(584, "D", 59),
+                new WordModel(585, "E", 59),
+                new WordModel(586, "F", 59),
+                new WordModel(587, "G", 59),
+                new WordModel(588, "O", 59),
+                new WordModel(589, "I", 59),
+                new WordModel(590, "K", 59)
+        );
+        List<String> listWordAnswer_59 = Arrays.asList("C","O","I");
+        QuestionModel question59 = new QuestionModel(59, "Lá rụng về ___", listWordAnswer_59, "hard", wordsForQuestion59);
+        questions.add(question59);
+
+        List<WordModel> wordsForQuestion60 = Arrays.asList(
+                new WordModel(591, "A", 60),
+                new WordModel(592, "B", 60),
+                new WordModel(593, "C", 60),
+                new WordModel(594, "D", 60),
+                new WordModel(595, "E", 60),
+                new WordModel(596, "M", 60),
+                new WordModel(597, "G", 60),
+                new WordModel(598, "H", 60),
+                new WordModel(599, "I", 60),
+                new WordModel(600, "K", 60)
+        );
+        List<String> listWordAnswer_60 = Arrays.asList("M","E");
+        QuestionModel question60 = new QuestionModel(60, "Không ___ lẹ chân tay", listWordAnswer_60, "hard", wordsForQuestion60);
+        questions.add(question60);
+
 
 
         return questions;

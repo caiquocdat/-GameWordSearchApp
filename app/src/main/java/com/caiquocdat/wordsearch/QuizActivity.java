@@ -96,7 +96,7 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
                 pointStr = quizBinding.pointTv.getText().toString();
                 point = Integer.parseInt(pointStr);
-                if (point > 90) {
+                if (point > 190) {
                     Toast.makeText(QuizActivity.this, "Bạn đã trả lời hết câu hỏi !", Toast.LENGTH_SHORT).show();
                 } else {
                     setUpCountTime();
@@ -191,11 +191,25 @@ public class QuizActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 quizBinding.circularCountdown.update(0, totalTime);
-                setUpTimeUp();
+                List<String> answers = questions.getAnswer();
+                answerAdapter = new AnswerAdapter(answers, answers, QuizActivity.this);
+                answerAdapter.notifyDataSetChanged();
+                quizBinding.answerRcv.setAdapter(answerAdapter);
+                new CountDownTimer((long) (1 * 1000), 100) {
+                    @Override
+                    public void onTick(long millisUntilFinished) {
 
+                    }
 
+                    @Override
+                    public void onFinish() {
+                        setUpTimeUp();
+                    }
+                }.start();
             }
         }.start();
+
+
     }
 
     private void setUpTimeUp() {
